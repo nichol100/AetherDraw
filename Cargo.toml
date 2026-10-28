@@ -1,0 +1,104 @@
+[package]
+name = "aetherdraw"
+version = "0.1.0"
+edition = "2021"
+authors = ["AetherDraw Contributors"]
+description = "A creative workspace combining 2D, 2.5D and 3D art, drawing and animation."
+license = "MIT"
+repository = "https://github.com/yourname/aetherdraw"
+readme = "README.md"
+keywords = ["art", "drawing", "animation", "2d", "3d"]
+categories = ["graphics", "multimedia"]
+
+# ---------------------------------------------------------------------------
+# Dependencies are chosen to work on BOTH Windows and Linux.
+# See docs/dependencies.md for install instructions per OS.
+# ---------------------------------------------------------------------------
+[dependencies]
+# Windowing + input events
+winit = "0.29"
+
+# Immediate-mode GUI (panels, widgets). Uses wgpu under the hood.
+eframe = { version = "0.28", default-features = false, features = ["wgpu", "persistence"] }
+egui = "0.28"
+egui-wgpu = "0.28"
+
+# GPU abstraction (Vulkan on Linux, DX12/Vulkan on Windows)
+wgpu = "0.20"
+
+# Math (vectors, matrices, quaternions)
+glam = "0.28"
+
+# Image loading/saving (PNG, JPEG, ...)
+image = "0.25"
+
+# Serialization for the project file and theme tokens
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ron = "0.8"
+
+# Zip archive for the .aether project format
+zip = "2"
+
+# Audio: playback + recording (cross-platform)
+cpal = "0.15"
+
+# Audio decoding (WAV/MP3/OGG/FLAC/AIFF)
+symphonia = { version = "0.5", features = ["all"] }
+
+# WAV writing
+hound = "3.5"
+
+# Resampling / time-stretch helpers
+rubato = "0.15"
+
+# Vector graphics tessellation (for vector layers)
+lyon = "1.0"
+
+# Text layout and shaping
+cosmic-text = "0.12"
+
+# 3D asset import/export (glTF)
+gltf = "1.4"
+
+# Physics (rigid bodies, collisions)
+rapier3d = "0.22"
+
+# File dialogs
+rfd = "0.14"
+
+# OS-specific standard directories (config, cache, ...)
+directories = "5"
+
+# Error handling
+anyhow = "1"
+thiserror = "1"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Concurrency
+parking_lot = "0.12"
+crossbeam-channel = "0.5"
+
+# Unique ids
+uuid = { version = "1", features = ["v4", "serde"] }
+
+# Date/time
+chrono = "0.4"
+
+# Random (brushes, particles)
+rand = "0.8"
+
+[dev-dependencies]
+egui = "0.28"
+glam = "0.28"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+
+[profile.dev]
+opt-level = 1

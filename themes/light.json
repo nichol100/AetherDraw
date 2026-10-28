@@ -1,0 +1,20 @@
+{
+  "name": "Light",
+  "colors": {
+    "background": "#F5F5F5",
+    "panel": "#FFFFFF",
+    "canvas": "#FFFFFF",
+    "text": "#1A1A1A",
+    "accent": "#2563EB",
+    "grid": "#E5E5E5"
+  },
+  "radii": {
+    "panel": 8,
+    "button": 6
+  },
+  "spacing": {
+    "small": 4,
+    "medium": 8,
+    "large": 16
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "AMOLED Black",
+  "colors": {
+    "background": "#000000",
+    "panel": "#0A0A0A",
+    "canvas": "#000000",
+    "text": "#FFFFFF",
+    "accent": "#00FF88",
+    "grid": "#111111"
+  },
+  "radii": {
+    "panel": 6,
+    "button": 4
+  },
+  "spacing": {
+    "small": 4,
+    "medium": 8,
+    "large": 16
+  }
+}

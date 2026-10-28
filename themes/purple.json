@@ -1,0 +1,20 @@
+{
+  "name": "Purple",
+  "colors": {
+    "background": "#1A1025",
+    "panel": "#25163A",
+    "canvas": "#120A1C",
+    "text": "#E9D5FF",
+    "accent": "#A855F7",
+    "grid": "#2E1A4A"
+  },
+  "radii": {
+    "panel": 8,
+    "button": 6
+  },
+  "spacing": {
+    "small": 4,
+    "medium": 8,
+    "large": 16
+  }
+}

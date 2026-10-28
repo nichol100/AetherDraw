@@ -1,0 +1,20 @@
+{
+  "name": "High Contrast",
+  "colors": {
+    "background": "#000000",
+    "panel": "#000000",
+    "canvas": "#FFFFFF",
+    "text": "#FFFFFF",
+    "accent": "#FFFF00",
+    "grid": "#808080"
+  },
+  "radii": {
+    "panel": 2,
+    "button": 2
+  },
+  "spacing": {
+    "small": 4,
+    "medium": 8,
+    "large": 16
+  }
+}

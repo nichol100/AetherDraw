@@ -1,0 +1,9 @@
+/target
+/Cargo.lock
+*.exe
+*.pdb
+*.zip
+*.AppImage
+*.deb
+*.tar.gz
+.DS_Store

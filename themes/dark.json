@@ -1,0 +1,20 @@
+{
+  "name": "Dark",
+  "colors": {
+    "background": "#1E1E2E",
+    "panel": "#2A2A3C",
+    "canvas": "#181825",
+    "text": "#CDD6F4",
+    "accent": "#89B4FA",
+    "grid": "#313244"
+  },
+  "radii": {
+    "panel": 8,
+    "button": 6
+  },
+  "spacing": {
+    "small": 4,
+    "medium": 8,
+    "large": 16
+  }
+}
